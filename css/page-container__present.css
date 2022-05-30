@@ -1,0 +1,54 @@
+@media (max-width: 280px) {
+  .page-container__present {
+    margin-left: 30px;
+  }
+}
+
+.present {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+@media (min-width: 1200px) {
+  .present {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .present__img {
+    margin-top: 50px;
+  }
+}
+
+.present__img-gift {
+  position: absolute;
+  top: 50px;
+  left: 101px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .present__img-gift {
+    top: 106px;
+  }
+}
+
+.present__text {
+  position: absolute;
+  top: 170px;
+  left: 58px;
+  color: white;
+  font-size: 16px;
+  width: 160px;
+  text-align: center;
+  line-height: 20px;
+  font-family: arial;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .present__text {
+    top: 101px;
+    left: 435px;
+    text-align: start;
+  }
+}

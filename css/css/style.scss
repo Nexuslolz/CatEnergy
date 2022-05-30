@@ -1,0 +1,28 @@
+//global
+@import "variables.scss";
+@import "global.scss";
+
+//header
+@import "page-header__logo.scss";
+@import "main-nav.scss";
+@import "site-list.scss";
+
+//container
+@import "page-container__title.scss";
+@import "page-container__set.scss";
+@import "page-container__features.scss";
+@import "page-container__example.scss";
+@import "page-container__catalog.scss";
+@import "catalog__product.scss";
+@import "more.scss";
+@import "catalog-other.scss";
+@import "page-container__present.scss";
+@import "page-container__form.scss";
+@import "program.scss";
+@import "page-container__connect.scss";
+@import "page-container__else.scss";
+
+//footer
+@import "page-footer__contacts.scss";
+@import "page-footer__social.scss";
+@import "page-footer__producer.scss";

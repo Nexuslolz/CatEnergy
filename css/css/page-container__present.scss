@@ -1,0 +1,44 @@
+@import "variables.scss";
+
+.page-container__present{
+ @media(max-width:280px){
+  margin-left: 30px;
+ }
+}
+.present {
+  position: relative;
+  margin-bottom: 35px;
+  @media (min-width:$desktop-width){
+    margin-bottom: 0;
+  }
+}
+.present__img{
+  @media(min-width:$tablet-width) and (max-width:$desktop-width){
+    margin-top: 50px
+  }
+}
+.present__img-gift {
+  position: absolute;
+  top: 50px;
+  left: 101px;
+
+  @media(min-width:$tablet-width) and (max-width:$desktop-width){
+  top: 106px;
+}
+}
+.present__text {
+  position: absolute;
+  top: 170px;
+  left: 58px;
+  color: white;
+  font-size: 16px;
+  width: 160px;
+  text-align: center;
+  line-height: 20px;
+  font-family: arial;
+  @media (min-width:$tablet-width)and(max-width:1199px){
+    top:101px;
+    left: 435px;
+    text-align: start;
+  }
+}

@@ -1,0 +1,19 @@
+@import "variables.scss";
+
+.page-container__form {
+  @extend %global;
+  flex-direction: column;
+  padding: 10px;
+  width: 80%;
+  min-width: 280px;
+  max-width: 550px;
+  @media(min-width:$tablet-width){
+      max-width: 750px;
+    }
+
+  @media (min-width:$desktop-width){
+    max-width: 1100px;
+    min-width: 1100px;
+  }
+
+}

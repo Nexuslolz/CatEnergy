@@ -1,0 +1,21 @@
+@import "variables.scss";
+
+.main-logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  @media (max-width: $tablet-width) {
+    width: max-content;
+  }
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    justify-content: start;
+    gap: 20px;
+  }
+  &:hover{
+    opacity: 80%;
+  }
+  &:active{
+    opacity: 60%;
+  }
+}

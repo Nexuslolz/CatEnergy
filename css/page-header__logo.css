@@ -1,0 +1,35 @@
+.main-logo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .main-logo {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-logo {
+    width: 160px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    gap: 20px;
+  }
+}
+
+.main-logo:hover {
+  opacity: 80%;
+}
+
+.main-logo:active {
+  opacity: 60%;
+}

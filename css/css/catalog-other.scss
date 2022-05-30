@@ -1,0 +1,208 @@
+@import "variables.scss";
+
+.other{
+  min-width: 280px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 450px;
+  padding: 15px;
+  @media (min-width:$tablet-width){
+    width: 100%;
+    min-width: 708px;
+    max-width: 850px;
+  }
+}
+
+.other__wrapper{
+  #first-child{
+    @media(min-width:$tablet-width)and(max-width:$desktop-width){
+      margin-top: 80px;
+
+    }
+  }
+  @media(min-width:$desktop-width){
+    #last-child{
+      border-bottom: 1px solid rgba(205, 205, 205, 1);
+    }
+  }
+}
+.other-header {
+  position: relative;
+  @media(min-width:$desktop-width){
+    max-width: 830px;
+  }
+}
+.other-header__header {
+  font-size: 24px;
+  line-height: 24px;
+  @media (min-width:$tablet-width){
+    font-size: 36px;
+    line-height: 36px;
+  }
+  &::after{
+    @extend %element;
+    height: 3px;
+    background-color: $color-1;
+    top: 13px;
+@media(max-width:600px){
+  right: 15px;
+  width: 25%;
+  }
+  @media(min-width:600px){
+    right: -43px;
+    width: 55%;
+  }
+  @media(min-width:$tablet-width){
+    top: 20px;
+    right: -40px;
+    width: 57%;
+  }
+  @media(min-width:$desktop-width){
+    top: 20px;
+    right: -400px;
+    width: 105%;
+  }
+  }
+  &::before{
+    @extend %element;
+    height: 3px;
+    background-color: $color-1;
+    top: 13px;
+    @media(min-width:$tablet-width){
+      top: 20px;
+      right: 733px;
+    width: 3%;
+    }
+    @media(min-width:$desktop-width){
+      top: 20px;
+      right: 856px;
+      width: 6%;
+    }
+  }
+}
+.other-header__line {
+  @extend %line;
+  width: 53px;
+  top: 14px;
+  left: 250px;
+}
+.catalog__other {
+  min-width: 280px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  @media(min-width:$tablet-width){
+    min-width: 680px;
+    max-width: 710px;
+  }
+  @media(min-width:$desktop-width){
+    margin-left: 200px;
+    margin-right: 145px;
+    align-items: flex-end;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1252px;
+    width: 95%;
+  }
+  .card {
+    border-top: 1px solid rgba(205, 205, 205, 1);
+    border-bottom: 1px solid rgba(205, 205, 205, 1);
+    align-items: flex-start;
+    min-width: 280px;
+    width: 90%;
+    max-width: 450px;
+    // @media(max-width:$tablet-width){
+    //   border:none;
+    // }
+    @media(min-width:$tablet-width){
+      max-width: 710px ;
+      padding: 10px;
+      min-width: 650px;
+      border:  1px solid rgba(205, 205, 205, 1);
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      .product{
+        justify-content: flex-end;
+      }
+    }
+    @media(min-width:$desktop-width){
+      flex-direction: row;
+      align-items: baseline;
+      display: flex;
+      border: none;
+      border-top:1px solid rgba(205, 205, 205, 1);
+    }
+    .card-btn{
+      @media(min-width:$desktop-width){
+        margin: 0;
+      }
+    }
+  }
+  .card__name {
+    margin: 12px 0;
+    font-size: 16px;
+    @media (min-width:$tablet-width){
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+  .card-table__content {
+    min-width: 280px;
+    width: 100%;
+    max-width: 450px;
+    font-size: 14px;
+    @media(min-width:$tablet-width){
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  .card-content__wrapper {
+    width: 100%;
+    @media (min-width: 600px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: baseline;
+      gap: 40px;
+      width: 100%;
+      min-width: 450px;
+      .product {
+        min-width: 205px;
+      }
+    }
+    @media (min-width:$tablet-width){
+      justify-items: start;
+      align-items: baseline;
+    gap: 101px;
+    width: 96%;
+    }
+    @media(min-width:$desktop-width){
+        gap: 0;
+    }
+  }
+  .product {
+    min-width: 280px;
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 12px;
+    border: none;
+  }
+  .card__btn {
+    width: 98%;
+    min-width: 280px;
+    max-width: 450px;
+    @media(min-width:$tablet-width){
+      max-width: 650px ;
+      min-width: 600px;
+    }
+    @media(min-width:$desktop-width){
+      max-width: 250px;
+      min-width: 0;
+    }
+  }
+}

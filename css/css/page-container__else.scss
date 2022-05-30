@@ -1,0 +1,152 @@
+@import "variables.scss";
+
+.page-container__else {
+  margin: 0 auto;
+  padding: 10px;
+  width: 80%;
+  min-width: 280px;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  @media(min-width:$tablet-width){
+    max-width: 750px;
+  }
+  @media (min-width:$desktop-width){
+    min-width: 950px;
+  }
+  .choise__filter{
+    @media(min-width:$tablet-width){
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media(min-width:$desktop-width){
+      .filter-list__item{
+        width: 110px;
+        margin-right: 65px;
+    }
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 85px;
+      padding-top: 15px;
+        padding-bottom: 15px;
+    }
+  }
+}
+.else__header{
+  @media (min-width:$tablet-width){
+    font-size: 36px;
+line-height: 36px;
+position: relative;
+width: 200px;
+  }
+  &::after{
+    @extend %element;
+    height: 3px;
+    background-color: $color-1;
+    top: 40px;
+@media(max-width:600px){
+  right: -40px;
+  width: 60%;
+  }
+  @media(min-width:600px){
+    right: -129px;
+    width: 90%;
+
+  }
+  @media(min-width:$tablet-width){
+    top: 21px;
+    right: -475px;
+    width: 220%;
+  }
+  @media(min-width:$desktop-width){
+    right: -1149px;
+    width: 550%;
+  }
+  }
+  &::before{
+    @extend %element;
+    height: 3px;
+    background-color: $color-1;
+    top: 13px;
+    @media(min-width:$tablet-width){
+      top: 21px;
+      right: 217px;
+      width: 61%;
+    }
+    @media(min-width:$desktop-width){
+      top: 21px;
+      right: 221px;
+      width: 70%;
+    }
+  }
+}
+.else {
+  @extend %global;
+  flex-direction: column;
+  width: 80%;
+  min-width: 280px;
+  max-width: 550px;
+  position: relative;
+  @media(min-width:$tablet-width){
+    max-width: 750px;
+  }
+  @media (min-width:$desktop-width){
+    min-width: 950px;
+  }
+}
+.else__line {
+  width: 148px;
+  left: 155px;
+  top: 41px;
+}
+.else__choise{
+  @media(min-width:$tablet-width){
+    margin: 0 auto;
+  }
+}
+.else .else__text:last-child {
+  text-align: center;
+}
+
+.choise__btn-checkbox + label::before {
+  @extend %element;
+  width: 28px;
+  height: 28px;
+  border: $border;
+  left: -50px;
+  top: -7px;
+
+}
+.choise__btn-checkbox:checked + label::after {
+  @extend %element;
+  left: -44px;
+  top: 0px;
+  background-image: url(../img/mobile/form/galochka.svg);
+  width: 25px;
+  height: 25px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.else__other{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media(min-width:$tablet-width){
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+}
+.else__btn {
+  @extend %btn;
+  width: 280px;
+@media(min-width:$tablet-width){
+  align-self: start;
+  margin-right: 35px;
+}
+@media(min-width:$desktop-width){
+  width: 520px;
+  margin-right: 55px;
+}
+}

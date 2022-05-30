@@ -1,0 +1,50 @@
+@import "variables.scss";
+
+.social {
+  @media (max-width:$tablet-width){
+  padding: 15px;
+}
+  @extend %global;
+  justify-content: space-around;
+  width: 100%;
+  min-width: 280px;
+  @media (min-width:$tablet-width){
+    justify-content: center;
+    gap: 25%;
+    padding-left: 25px;
+  }
+  @media(min-width:1025px){
+    padding: 0;
+
+  }
+}
+.page-footer__social {
+  margin-bottom: 25px;
+  width: 80%;
+  min-width: 280px;
+  max-width: 760px;
+}
+.page-footer__wrapper{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  @media (max-width:$tablet-width){
+  min-width: 280px;
+  max-width: 767px;
+  .divide__line{
+    width: 100%;
+  }
+}
+@media (min-width:$tablet-width){
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  .divide__line{
+    display: none;
+  }
+  padding: 30px;
+  justify-items: center;
+  align-items: end;
+}
+}
