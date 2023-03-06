@@ -1,12 +1,11 @@
 # Cat-Energy
 
 ### Ссылка на прототип:
-
-  https://nexuslolz.github.io/CatEnergy/
+ https://nexuslolz.github.io/CatEnergy/
 
 ## Preview
 
-![preview gif](img/CatEnergy.gif)
+<img src='img/CatEnergy.gif' width='550'>
 
 ## Описание
 
