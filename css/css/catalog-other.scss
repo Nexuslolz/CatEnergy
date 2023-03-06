@@ -15,7 +15,7 @@
 
 .other__wrapper{
   #first-child{
-    @media(min-width:$tablet-width)and(max-width:$desktop-width){
+    @media(min-width:$tablet-width) and (max-width:$desktop-width){
       margin-top: 80px;
 
     }

@@ -19,12 +19,9 @@
   @media (min-width: $desktop-width) {
     min-width: 1200px;
     max-width: 1440px;
-   padding: 100px;
-    // margin: 0 auto;
+    padding: 100px;
   }
-  @media(min-width:1290px){
-    margin-left: -35px;
-  }
+
 }
 .example {
   @extend %global;
@@ -50,7 +47,6 @@
 }
 .example__content {
   width: 96%;
-  // min-width: 280px;
   max-width: 540px;
   margin: 0 auto;
   @media (min-width: $tablet-width) {
@@ -84,7 +80,7 @@
 }
 .content__text {
   font-family: arial;
-   color: rgba(68, 68, 68, 1);
+  color: rgba(68, 68, 68, 1);
   @media (max-width:767px) {
   font-size: 14px;
   line-height: 18px;
