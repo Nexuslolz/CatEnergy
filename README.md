@@ -5,7 +5,7 @@
 
 ## Preview
 
-<img src='img/CatEnergy.gif' width='550'>
+<img src='img/CatEnergy.gif' width='350'>
 
 ## Описание
 
